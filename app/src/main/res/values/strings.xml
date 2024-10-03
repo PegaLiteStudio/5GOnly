@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">5G Only</string>
+    <string name="set_5g_only">Set 5G Only</string>
+    <string name="note_this_may_not_work_for_airtel_india_users">NOTE\nThis May Not Work For Airtel(India) Users!</string>
+    <string name="_1_click_on_set_preferred_network_type_dropdown">1. Click on \'Set preferred network type\' dropdown</string>
+    <string name="_2_select_nr_only_option">2. Select \'NR Only\' option</string>
+</resources>
