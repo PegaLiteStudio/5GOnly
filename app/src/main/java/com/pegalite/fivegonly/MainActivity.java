@@ -1,5 +1,6 @@
 package com.pegalite.fivegonly;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -30,10 +31,12 @@ public class MainActivity extends AppCompatActivity {
         window.setNavigationBarColor(ContextCompat.getColor(this, R.color.white));
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
 
+        new AlertDialog.Builder(this).setTitle("5G Only!").setMessage("Make sure your device supports 5G networks for 5G Only to work properly.").setPositiveButton("Confirm", (dialogInterface, i) -> {
+            dialogInterface.dismiss();
+            binding.set5GOnly.setOnClickListener(view -> openPhoneInfo());
+        }).setNegativeButton("Exit", (dialogInterface, i) -> finish()).setCancelable(false).show();
 
-        binding.set5GOnly.setOnClickListener(view -> openPhoneInfo());
-
-
+        binding.knowMore.setOnClickListener(view -> new AlertDialog.Builder(this).setTitle("5G Only!").setMessage("Note for Airtel Users: If you're using NR only (5G-only) mode, please be aware that Airtel's 5G network operates on a Non-Standalone (NSA) architecture, which requires a 4G connection for signaling. Forcing 5G-only mode may cause connectivity issues, such as an inability to make calls or use data. We recommend using 5G Auto mode to ensure smooth network performance with Airtel.").setPositiveButton("Okay", (dialogInterface, i) -> dialogInterface.dismiss()).show());
     }
 
 
