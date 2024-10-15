@@ -5,4 +5,13 @@
     <string name="_1_click_on_set_preferred_network_type_dropdown">1. Click on \'Set preferred network type\' dropdown</string>
     <string name="_2_select_nr_only_option">2. Select \'NR Only\' option</string>
     <string name="tap_to_know_more">Tap to Know More</string>
+
+    <!--    Sample AD IDs-->
+    <!--    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>-->
+    <!--    <string name="ad_id">ca-app-pub-3940256099942544/1033173712</string>-->
+
+    <!--    Real AD IDs-->
+    <string name="app_id">ca-app-pub-1907660941815601~5644995411</string>
+    <string name="ad_id">ca-app-pub-1907660941815601/8272192592</string>
+
 </resources>

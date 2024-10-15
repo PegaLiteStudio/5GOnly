@@ -10,8 +10,8 @@ android {
         applicationId = "com.pegalite.fivegonly"
         minSdk = 24
         targetSdk = 34
-        versionCode = 2
-        versionName = "1.2"
+        versionCode = 3
+        versionName = "1.3"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -45,6 +45,8 @@ dependencies {
     implementation(libs.sdp.android)
     implementation(libs.ssp.android)
 
+    /*For Ads*/
+    implementation(libs.play.services.ads)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
